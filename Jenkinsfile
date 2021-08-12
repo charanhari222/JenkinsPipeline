@@ -18,13 +18,13 @@ pipeline {
         echo '********* Build Stage Finished **********'
         }
     }
-    stage('Testing Stage') {
-      steps {
-        echo '********* Test Stage Started **********'
-        bat 'python test.py'
-        echo '********* Test Stage Finished **********'
-      }   
-    }
+    //stage('Testing Stage') {
+      //steps {
+        //echo '********* Test Stage Started **********'
+        //bat 'python test.py'
+        //echo '********* Test Stage Finished **********'
+     // }   
+    //}
     stage('Configure Artifactory'){
       steps{
         script {
